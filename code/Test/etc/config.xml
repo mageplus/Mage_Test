@@ -103,9 +103,71 @@
             <modules>
                 <!-- Place your module name in your module config.xml 
                      For adding it to test suite -->
-                <!-- Example: 
-                <Namespace_MyModule />
-                -->
+                <!-- here, we include ALL Magento CORE modules -->
+                <Mage_Admin/>
+                <Mage_Adminhtml/>
+                <Mage_AdminNotification/>
+                <Mage_Api/>
+                <Mage_Api2/>
+                <Mage_Authorizenet/>
+                <Mage_Backup/>
+                <Mage_Captcha/>
+                <Mage_Catalog/>
+                <Mage_CatalogIndex/>
+                <Mage_CatalogInventory/>
+                <Mage_CatalogRule/>
+                <Mage_CatalogSearch/>
+                <Mage_Centinel/>
+                <Mage_Checkout/>
+                <Mage_Cms/>
+                <Mage_Compiler/>
+                <Mage_Connect/>
+                <Mage_Contacts/>
+                <Mage_Core/>
+                <Mage_Cron/>
+                <Mage_CurrencySymbol/>
+                <Mage_Customer/>
+                <Mage_Dataflow/>
+                <Mage_Directory/>
+                <Mage_Downloadable/>
+                <Mage_Eav/>
+                <Mage_GiftMessage/>
+                <Mage_GoogleAnalytics/>
+                <Mage_GoogleBase/>
+                <Mage_GoogleCheckout/>
+                <Mage_ImportExport/>
+                <Mage_Index/>
+                <Mage_Install/>
+                <Mage_Log/>
+                <Mage_Media/>
+                <Mage_Newsletter/>
+                <Mage_Oauth/>
+                <Mage_Page/>
+                <Mage_PageCache/>
+                <Mage_Paygate/>
+                <Mage_Payment/>
+                <Mage_Paypal/>
+                <Mage_PayPalUk/>
+                <Mage_Persistent/>
+                <Mage_Poll/>
+                <Mage_ProductAlert/>
+                <Mage_Rating/>
+                <Mage_Reports/>
+                <Mage_Review/>
+                <Mage_Rss/>
+                <Mage_Rule/>
+                <Mage_Sales/>
+                <Mage_SalesRule/>
+                <Mage_Sendfriend/>
+                <Mage_Shipping/>
+                <Mage_Sitemap/>
+                <Mage_Tag/>
+                <Mage_Tax/>
+                <Mage_Usa/>
+                <Mage_Weee/>
+                <Mage_Widget/>
+                <Mage_Wishlist/>
+                <Mage_XmlConnect/>
             </modules>
         </suite>
     </phpunit>
