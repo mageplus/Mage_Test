@@ -22,7 +22,7 @@
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
-class Mage_Adminhtml_Test_Catalog_CategoryController extends Mage_Adminhtml_Test_Utility_Controller
+class Mage_Adminhtml_Test_Catalog_CategoryController extends Mage_Test_Unit_Case_Controller 
 {
     /**
      * @magentoDataFixture Mage/Core/_files/store.php

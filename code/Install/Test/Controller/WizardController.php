@@ -25,7 +25,7 @@
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
-class Mage_Install_WizardControllerTest extends Magento_Test_TestCase_ControllerAbstract
+class Mage_Install_WizardControllerTest extends Mage_Test_Unit_Case_Controller 
 {
     /**
      * @var string
