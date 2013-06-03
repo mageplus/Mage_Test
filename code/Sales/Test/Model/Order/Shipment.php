@@ -1,53 +1,135 @@
 <?php
-/**
- * Magento
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Open Software License (OSL 3.0)
- * that is bundled with this package in the file LICENSE.txt.
- * It is also available through the world-wide-web at this URL:
- * http://opensource.org/licenses/osl-3.0.php
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- * to license@magentocommerce.com so we can send you a copy immediately.
- *
- * DISCLAIMER
- *
- * Do not edit or add to this file if you wish to upgrade Magento to newer
- * versions in the future. If you wish to customize Magento for your
- * needs please refer to http://www.magentocommerce.com for more information.
- *
+ /*
  * @category    Magento
- * @package     Magento_Sales
- * @subpackage  integration_tests
- * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
+ * @package     Mage_Sales
+ * @subpackage  
+ * @copyright   Copyright (c) 2013 Mage+ Ltd. (http://mageplus.org)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
 class Mage_Sales_Test_Model_Order_Shipment extends Mage_Test_Unit_Case
 {
     /**
-     * @magentoConfigFixture current_store design/theme/full_name default/default/default
-     * @magentoDataFixture Mage/Sales/_files/order.php
+     * @var Mage_Sales_Model_Order_Shipment
      */
+    protected $_model;
+
+    // constants required for integration tests
+    const CLASS_GROUP_TYPE = parent::CLASS_GROUP_TYPE_MODEL;
+    const CLASS_ID = 'sales/order_shipment';
+
+    protected function setUp()
+    {
+        $this->_model = new Mage_Sales_Model_Order_Shipment();
+    }
+
+    public function testLoadByIncrementId()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }	
+
+    public function testSetOrder()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }   
+
+    public function testGetProtectCode()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }   
+
+    public function testGetOrder()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }   
+
+    public function testGetBillingAddress()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }   
+
+    public function testGetShippingAddress()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }   
+
+    public function testRegister()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }   
+
+    public function testGetItemsCollection()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }   
+
+    public function testGetAllItems()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }   
+
+    public function testGetItemById()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }   
+
+    public function testAddItem()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }   
+
+    public function testGetTracksCollection()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }   
+
+    public function testGetAllTracks()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }   
+
+    public function testGetTrackById()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }   
+
+    public function testAddTrack()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }   
+
+    public function testAddComment()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }   
+
+    public function testGetCommentsCollection()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }   
+
     public function testSendEmail()
     {
-        $order = Mage::getModel('Mage_Sales_Model_Order');
-        $order->loadByIncrementId('100000001');
-        $order->setCustomerEmail('customer@example.com');
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }   
 
-        $shipment = Mage::getModel('Mage_Sales_Model_Order_Shipment');
-        $shipment->setOrder($order);
+    public function testSendUpdateEmail()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }   
 
-        $payment = $order->getPayment();
-        $paymentInfoBlock = Mage::helper('Mage_Payment_Helper_Data')->getInfoBlock($payment);
-        $paymentInfoBlock->setArea('invalid-area');
-        $payment->setBlockMock($paymentInfoBlock);
+    public function testGetStore()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }   
 
-        $this->assertEmpty($shipment->getEmailSent());
-        $shipment->sendEmail(true);
-        $this->assertNotEmpty($shipment->getEmailSent());
-        $this->assertEquals('frontend', $paymentInfoBlock->getArea());
-    }
+    public function testSetShippingLabel()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }   
+
+    public function testGetShippingLabel()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }   
 }

@@ -29,6 +29,11 @@ abstract class Mage_Test_Unit_Case extends PHPUnit_Framework_TestCase
 {
     const XML_PATH_DEFAULT_FIXTURE_MODEL = 'phpunit/suite/fixture/model';
     const XML_PATH_DEFAULT_EXPECTATION_MODEL = 'phpunit/suite/expectation/model';
+    
+    const CLASS_GROUP_TYPE_MODEL = 'model';
+    const CLASS_GROUP_TYPE_BLOCK = 'block';
+    const CLASS_GROUP_TYPE_HELPER = 'helper';
+    const CLASS_GROUP_TYPE_CONTROLLER = 'controller';
 
     /**
      * List of system registry values replaced by test case

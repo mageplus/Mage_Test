@@ -31,34 +31,6 @@
 class Mage_Core_Test_Model_Observer extends Mage_Test_Unit_Case
 {
     /**
-     * Theme registration test
-     *
-     * @magentoDbIsolation enabled
-     */
-    public function testThemeRegistration()
-    {
-        $pathPattern = implode(DS, array(__DIR__, '_files', 'design', 'frontend', 'default', '*', 'theme.xml'));
-
-        $eventObserver = $this->_createEventObserverForThemeRegistration();
-        $eventObserver->getEvent()->setPathPattern($pathPattern);
-
-        $observer = new Mage_Core_Model_Observer();
-        $observer->themeRegistration($eventObserver);
-
-        $defaultModel = $this->_getThemeModel();
-        $defaultModel->load('default/default', 'theme_path');
-
-        $iphoneModel = $this->_getThemeModel();
-        $iphoneModel->load('default/iphone', 'theme_path');
-
-        $this->assertEquals('Default', $defaultModel->getThemeTitle());
-        $this->assertEquals(null, $defaultModel->getParentId());
-
-        $this->assertEquals('Iphone', $iphoneModel->getThemeTitle());
-        $this->assertEquals($defaultModel->getId(), $iphoneModel->getParentId());
-    }
-
-    /**
      * Get theme model
      *
      * @return Mage_Core_Model_Abstract
@@ -78,5 +50,15 @@ class Mage_Core_Test_Model_Observer extends Mage_Test_Unit_Case
         $response = new Varien_Object(array('additional_options' => array()));
         $event = new Varien_Event(array('response_object' => $response));
         return new Varien_Event_Observer(array('event' => $event));
+    }
+
+    public function testAddSynchronizeNotification()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
+
+    public function testCleanCache()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
     }
 }

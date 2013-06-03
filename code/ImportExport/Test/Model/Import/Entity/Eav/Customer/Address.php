@@ -35,7 +35,7 @@ class Mage_ImportExport_Test_Model_Import_Entity_Eav_Customer_Address extends Ma
      *
      * @var string
      */
-    protected $_testClassName = 'Mage_ImportExport_Model_Import_Entity_Eav_Customer_Address';
+    protected $_testClassName = 'Mage_ImportExport_Model_Import_Entity_Customer_Address';
 
     /**
      * Fixture key from fixture

@@ -46,6 +46,7 @@ class Mage_Cms_Test_Model_Wysiwyg_Images_Storage extends Mage_Test_Unit_Case
 
     /**
      * @magentoAppIsolation enabled
+     *
      */
     public function testGetFilesCollection()
     {

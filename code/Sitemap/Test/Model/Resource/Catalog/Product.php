@@ -42,7 +42,7 @@ class Mage_Sitemap_Test_Model_Resource_Catalog_Product extends Mage_Test_Unit_Ca
      */
     public function testGetCollectionNone()
     {
-        $model = Mage::getResourceModel('Mage_Sitemap_Model_Resource_Catalog_Product');
+        $model = Mage::getResourceModel('sitemap/catalog_product');
         $products = $model->getCollection(Mage_Core_Model_App::DISTRO_STORE_ID);
 
         $this->_checkProductCollection($products, 3, array(1, 4, 5));
@@ -67,7 +67,7 @@ class Mage_Sitemap_Test_Model_Resource_Catalog_Product extends Mage_Test_Unit_Ca
      */
     public function testGetCollectionAll()
     {
-        $model = Mage::getResourceModel('Mage_Sitemap_Model_Resource_Catalog_Product');
+        $model = Mage::getResourceModel('sitemap/catalog_product');
         $products = $model->getCollection(Mage_Core_Model_App::DISTRO_STORE_ID);
 
         $this->_checkProductCollection($products, 3, array(1, 4, 5));
@@ -118,7 +118,7 @@ class Mage_Sitemap_Test_Model_Resource_Catalog_Product extends Mage_Test_Unit_Ca
      */
     public function testGetCollectionBase()
     {
-        $model = Mage::getResourceModel('Mage_Sitemap_Model_Resource_Catalog_Product');
+        $model = Mage::getResourceModel('sitemap/catalog_product');
         $products = $model->getCollection(Mage_Core_Model_App::DISTRO_STORE_ID);
 
         $this->_checkProductCollection($products, 3, array(1, 4, 5));

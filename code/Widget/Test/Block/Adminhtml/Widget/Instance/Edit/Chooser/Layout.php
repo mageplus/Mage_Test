@@ -59,4 +59,34 @@ class Mage_Widget_Test_Block_Adminhtml_Widget_Instance_Edit_Chooser_Layout exten
         $this->assertXmlStringEqualsXmlFile(__DIR__ . '/_files/page_types_select.html', $this->_block->toHtml());
     }
     */
+
+    public function testAddLayoutHandlePattern()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
+
+    public function testGetLayoutHandlePatterns()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
+
+    public function testGetArea()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
+
+    public function testGetPackage()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
+
+    public function testGetTheme()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.'); 
+    }
+
+    public function testGetLayoutHandles()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
 }

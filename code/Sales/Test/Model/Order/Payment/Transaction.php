@@ -1,50 +1,140 @@
 <?php
-/**
- * Magento
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Open Software License (OSL 3.0)
- * that is bundled with this package in the file LICENSE.txt.
- * It is also available through the world-wide-web at this URL:
- * http://opensource.org/licenses/osl-3.0.php
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- * to license@magentocommerce.com so we can send you a copy immediately.
- *
- * DISCLAIMER
- *
- * Do not edit or add to this file if you wish to upgrade Magento to newer
- * versions in the future. If you wish to customize Magento for your
- * needs please refer to http://www.magentocommerce.com for more information.
- *
+ /*
  * @category    Magento
- * @package     Magento_Sales
- * @subpackage  integration_tests
- * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
+ * @package     Mage_Sales
+ * @subpackage  
+ * @copyright   Copyright (c) 2013 Mage+ Ltd. (http://mageplus.org)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
-/**
- * Tests transaction model:
- *
- * @see Mage_Sales_Model_Order_Payment_Transaction
- * @magentoDataFixture Mage/Sales/_files/transactions.php
- */
 class Mage_Sales_Test_Model_Order_Payment_Transaction extends Mage_Test_Unit_Case
 {
+    /**
+     * @var Mage_Sales_Model_Order_Payment_Transaction
+     */
+    protected $_model;
+
+    // constants required for integration tests
+    const CLASS_GROUP_TYPE = parent::CLASS_GROUP_TYPE_MODEL;
+    const CLASS_ID = 'sales/order_payment_transaction';
+
+    protected function setUp()
+    {
+        $this->_model = new Mage_Sales_Model_Order_Payment_Transaction();
+    }
+
+    public function testSetOrderPaymentObject()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }	
+
+    public function testSetTxnId()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    } 
+
+    public function testSetParentTxnId()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    } 
+
+    public function testSetTxnType()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    } 
+
+    public function testGetPatentTransaction()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    } 
+
+    public function testGetChildTransactions()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    } 
+
+    public function testCloseAuthorization()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    } 
+
+    public function testCloseCapture()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    } 
+
+    public function testCanVoidAuthorizationCompletely()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    } 
+
+    public function testHasChildTransaction()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    } 
+
     public function testLoadByTxnId()
     {
-        $order = Mage::getModel('Mage_Sales_Model_Order');
-        $order->loadByIncrementId('100000001');
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    } 
 
-        $model = Mage::getModel('Mage_Sales_Model_Order_Payment_Transaction');
-        $model->setOrderPaymentObject($order->getPayment())
-            ->loadByTxnId('invalid_transaction_id');
+    public function testSetAdditionalInformation()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    } 
 
-        $this->assertNull($model->getId());
+    public function testGetAdditionalInformation()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    } 
 
-        $model->loadByTxnId('trx1');
-        $this->assertNotNull($model->getId());
-    }
+    public function testUnsAdditionalInformation()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    } 
+
+    public function testClose()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    } 
+
+    public function testGetOrderPaymentObject()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    } 
+
+    public function testGetOrderId()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    } 
+
+    public function testGetOrder()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    } 
+
+    public function testSetOrder()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    } 
+
+    public function testIsFailsafe()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    } 
+
+    public function testIsVoided()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    } 
+
+    public function testGetTransactionTypes()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    } 
+
+    public function testGetOrderWebsiteId()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    } 
 }

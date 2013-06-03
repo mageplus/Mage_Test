@@ -39,15 +39,6 @@ class Mage_Tax_Test_Model_Config extends Mage_Test_Unit_Case
         $this->_model = null;
     }
 
-    public function testSetPriceIncludesTax()
-    {
-        $this->assertFalse($this->_model->priceIncludesTax());
-        $this->assertSame($this->_model, $this->_model->setPriceIncludesTax(1));
-        $this->assertTrue($this->_model->priceIncludesTax());
-        $this->_model->setPriceIncludesTax(null);
-        $this->assertFalse($this->_model->priceIncludesTax());
-    }
-
     /**
      * @magentoConfigFixture current_store tax/calculation/price_includes_tax 1
      */

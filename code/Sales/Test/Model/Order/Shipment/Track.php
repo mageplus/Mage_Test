@@ -1,56 +1,60 @@
 <?php
-/**
- * Magento
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Open Software License (OSL 3.0)
- * that is bundled with this package in the file LICENSE.txt.
- * It is also available through the world-wide-web at this URL:
- * http://opensource.org/licenses/osl-3.0.php
- * If you did not receive a copy of the license and are unable to
- * obtain it through the world-wide-web, please send an email
- * to license@magentocommerce.com so we can send you a copy immediately.
- *
- * DISCLAIMER
- *
- * Do not edit or add to this file if you wish to upgrade Magento to newer
- * versions in the future. If you wish to customize Magento for your
- * needs please refer to http://www.magentocommerce.com for more information.
- *
+ /*
  * @category    Magento
- * @package     Mage_Sale
- * @subpackage  Test
- * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
+ * @package     Mage_Sales
+ * @subpackage  
+ * @copyright   Copyright (c) 2013 Mage+ Ltd. (http://mageplus.org)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
-class Mage_Sales_Test_Model_Order_Shipment_TrackTest extends Mage_Test_Unit_Case
+class Mage_Sales_Test_Model_Order_Shipment_Track extends Mage_Test_Unit_Case
 {
     /**
      * @var Mage_Sales_Model_Order_Shipment_Track
      */
     protected $_model;
 
+    // constants required for integration tests
+    const CLASS_GROUP_TYPE = parent::CLASS_GROUP_TYPE_MODEL;
+    const CLASS_ID = 'sales/order_shipment_track';
+
     protected function setUp()
     {
         $this->_model = new Mage_Sales_Model_Order_Shipment_Track();
     }
 
-    public function testSetGetNumber()
+    public function testGetNumber()
     {
-        $this->assertNull($this->_model->getNumber());
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }	
 
-        $this->_model->setNumber('test');
-        $this->assertEquals('test', $this->_model->getNumber());
-        $this->assertEquals('test', $this->_model->getTrackNumber());
-    }
+    public function testSetShipment()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }  
+
+    public function testGetShipment()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }  
 
     public function testIsCustom()
     {
-        $this->_model->setCarrierCode('ups');
-        $this->assertFalse($this->_model->isCustom());
-        $this->_model->setCarrierCode('custom');
-        $this->assertTrue($this->_model->isCustom());
-    }
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }  
+
+    public function testGetProtectCode()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }  
+
+    public function testGetNumberDetail()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }  
+
+    public function testGetStore()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }  
 }

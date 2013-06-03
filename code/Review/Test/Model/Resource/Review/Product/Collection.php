@@ -32,9 +32,9 @@ class Mage_Review_Test_Model_Resource_Review_Product_Collection extends Mage_Tes
      */
     public function testGetResultingIds()
     {
-        $collection = Mage::getResourceModel('Mage_Review_Model_Resource_Review_Product_Collection');
+        $collection = Mage::getResourceModel('review/review_product_collection');
         $collection->addStatusFilter(Mage_Review_Model_Review::STATUS_APPROVED);
-        $actual = $collection->getResultingIds();
+        $actual = $collection->getLoadedIds();
         $this->assertCount(2, $actual);
     }
 }

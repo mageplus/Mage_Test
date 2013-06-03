@@ -37,10 +37,10 @@ class Mage_Rule_Test_Model_Condition_Abstract extends Mage_Test_Unit_Case
             true, true, true, array('getValueElementRenderer'));
         $model->expects($this->any())
              ->method('getValueElementRenderer')
-             ->will($this->returnValue(Mage::getObjectManager()->create('Mage_Rule_Block_Editable')));
+             ->will($this->returnValue(new Mage_Rule_Block_Editable));
 
-        $rule = Mage::getObjectManager()->create('Mage_Rule_Model_Rule');
-        $model->setRule($rule->setForm(Mage::getObjectManager()->create('Varien_Data_Form')));
+        $rule = Mage::getModel('rule/rule');
+        $model->setRule($rule->setForm(new Varien_Data_Form));
 
         $property = new ReflectionProperty('Mage_Rule_Model_Condition_Abstract', '_inputType');
         $property->setAccessible(true);

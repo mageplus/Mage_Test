@@ -57,6 +57,7 @@ class Mage_Core_Test_Model_App_Area extends Mage_Test_Unit_Case
     /**
      * @magentoConfigFixture adminhtml/design/theme/full_name default/default/default
      * @magentoAppIsolation enabled
+     *
      */
     public function testDetectDesignGlobalConfig()
     {
@@ -68,6 +69,7 @@ class Mage_Core_Test_Model_App_Area extends Mage_Test_Unit_Case
     /**
      * @magentoConfigFixture current_store design/theme/full_name default/default/blank
      * @magentoAppIsolation enabled
+     *
      */
     public function testDetectDesignStoreConfig()
     {
@@ -106,6 +108,7 @@ class Mage_Core_Test_Model_App_Area extends Mage_Test_Unit_Case
      * @magentoDataFixture Mage/Core/_files/design_change.php
      * @magentoAppIsolation enabled
      */
+
     // @codingStandardsIgnoreEnd
     public function testDetectDesignNonFrontend()
     {

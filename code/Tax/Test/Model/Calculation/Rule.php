@@ -69,7 +69,7 @@ class Mage_Tax_Test_Model_Calculation_Rule extends Mage_Test_Unit_Case
         $model = new Mage_Tax_Model_Calculation_Rule(
             Mage::getModel('Mage_Core_Model_Event_Manager'),
             Mage::getModel('Mage_Core_Model_Cache'),
-            Mage::helper('Mage_Tax_Helper_Data'),
+            Mage::helper('tax'),
             $this->_getTaxClassMock(
                 'getCustomerClasses',
                 Mage_Tax_Model_Class::TAX_CLASS_TYPE_CUSTOMER
@@ -91,7 +91,7 @@ class Mage_Tax_Test_Model_Calculation_Rule extends Mage_Test_Unit_Case
         $model = new Mage_Tax_Model_Calculation_Rule(
             Mage::getModel('Mage_Core_Model_Event_Manager'),
             Mage::getModel('Mage_Core_Model_Cache'),
-            Mage::helper('Mage_Tax_Helper_Data'),
+            Mage::helper('tax'),
             $this->_getTaxClassMock(
                 'getCustomerClasses',
                 Mage_Tax_Model_Class::TAX_CLASS_TYPE_CUSTOMER
@@ -113,7 +113,7 @@ class Mage_Tax_Test_Model_Calculation_Rule extends Mage_Test_Unit_Case
         $model = new Mage_Tax_Model_Calculation_Rule(
             Mage::getModel('Mage_Core_Model_Event_Manager'),
             Mage::getModel('Mage_Core_Model_Cache'),
-            Mage::helper('Mage_Tax_Helper_Data'),
+            Mage::helper('tax'),
             $this->_getTaxClassMock(
                 'getProductClasses',
                  Mage_Tax_Model_Class::TAX_CLASS_TYPE_PRODUCT
@@ -135,7 +135,7 @@ class Mage_Tax_Test_Model_Calculation_Rule extends Mage_Test_Unit_Case
         $model = new Mage_Tax_Model_Calculation_Rule(
             Mage::getModel('Mage_Core_Model_Event_Manager'),
             Mage::getModel('Mage_Core_Model_Cache'),
-            Mage::helper('Mage_Tax_Helper_Data'),
+            Mage::helper('tax'),
             $this->_getTaxClassMock(
                 'getProductClasses',
                  Mage_Tax_Model_Class::TAX_CLASS_TYPE_PRODUCT
@@ -157,7 +157,7 @@ class Mage_Tax_Test_Model_Calculation_Rule extends Mage_Test_Unit_Case
         $model = new Mage_Tax_Model_Calculation_Rule(
             Mage::getModel('Mage_Core_Model_Event_Manager'),
             Mage::getModel('Mage_Core_Model_Cache'),
-            Mage::helper('Mage_Tax_Helper_Data'),
+            Mage::helper('tax'),
             Mage::getModel('Mage_Tax_Model_Class'),
             null,
             null,

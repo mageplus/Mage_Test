@@ -35,12 +35,12 @@ class Mage_Payment_Test_Block_Catalog_Product_View_Profile extends Mage_Test_Uni
      */
     public function testGetDateHtml()
     {
-        $product = Mage::getObjectManager()->create('Mage_Catalog_Model_Product');
+        $product = Mage::getModel('catalog/product');
         $product->setIsRecurring('1');
         $product->setRecurringProfile(array('start_date_is_editable' => true));
         Mage::register('current_product', $product);
-        $block = Mage::getObjectManager()->create('Mage_Payment_Block_Catalog_Product_View_Profile');
-        $block->setLayout(Mage::getObjectManager()->create('Mage_Core_Model_Layout'));
+        $block = new Mage_Payment_Block_Catalog_Product_View_Profile;
+        $block->setLayout(Mage::getModel('core/layout'));
 
         $html = $block->getDateHtml();
         $this->assertNotEmpty($html);

@@ -25,7 +25,7 @@
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
-class Mage_Core_Test_Helper_Abstract extends Mage_Test_Unit_Case
+class Mage_Tax_Test_Helper_Abstract extends Mage_Test_Unit_Case
 {
     /**
      * @var Mage_Core_Helper_Abstract|PHPUnit_Framework_MockObject_MockObject

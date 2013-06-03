@@ -28,7 +28,7 @@
 /**
  * @group module:Mage_Adminhtml
  */
-class Mage_Adminhtml_Test_Controller_IndexController extends Mage_Adminhtml_Test_Utility_Controller
+class Mage_Adminhtml_Test_Controller_IndexController extends Mage_Test_Unit_Case_Controller 
 {
     /**
      * @covers Mage_Adminhtml_IndexController::changeLocaleAction

@@ -43,18 +43,6 @@ class Mage_Core_Test_Model_Design extends Mage_Test_Unit_Case
         $this->assertNull($this->_model->getId());
     }
 
-    /**
-     * @magentoDataFixture Mage/Core/_files/design_change.php
-     */
-    public function testChangeDesign()
-    {
-        $designPackage = new Mage_Core_Model_Design_Package('frontend', 'default', 'default', 'default');
-        $storeId = Mage::app()->getAnyStoreView()->getId(); // fixture design_change
-        $design = new Mage_Core_Model_Design;
-        $design->loadChange($storeId)->changeDesign($designPackage);
-        $this->assertEquals('default/modern/default', $designPackage->getDesignTheme());
-    }
-
     public function testCRUD()
     {
         $this->_model->setData(

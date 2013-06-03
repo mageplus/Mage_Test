@@ -40,7 +40,6 @@ class Mage_Core_Test_Model_Config_Options extends Mage_Test_Unit_Case
         'etc_dir'     => 'etc',
         'lib_dir'     => 'lib',
         'locale_dir'  => 'locale',
-        'pub_dir'     => 'pub',
         'js_dir'      => 'js',
         'media_dir'   => 'media',
         'var_dir'     => 'var',

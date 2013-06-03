@@ -25,7 +25,7 @@
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
-class Mage_Tag_Test_Model_TagTest extends Mage_Test_Unit_Case
+class Mage_Tag_Test_Model_Tag extends Mage_Test_Unit_Case
 {
     /**
      * @var Mage_Tag_Model_Tag
@@ -37,14 +37,133 @@ class Mage_Tag_Test_Model_TagTest extends Mage_Test_Unit_Case
         $this->_model= new Mage_Tag_Model_Tag();
     }
 
-    /**
-     * @magentoAppIsolation enabled
-     */
-    public function testCRUD()
+    public function testAfterCommitCallback()
     {
-        Mage::app()->setCurrentStore(Mage::app()->getStore(Mage_Core_Model_App::ADMIN_STORE_ID));
-        $this->_model->setName('test');
-        $crud = new Magento_Test_Entity($this->_model, array('name' => uniqid()));
-        $crud->testCrud();
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
+
+    public function testSetAddBasePopularity()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
+
+    public function testGetAddBasePopularity()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
+
+    public function testGetPopularity()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
+
+    public function testGetName()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
+
+    public function testGetTagId()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
+
+    public function testGetRatio()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
+
+    public function testSetRatio()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
+
+    public function testLoadByName()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
+
+    public function testAggregate()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
+
+    public function testProductEventAggregate()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
+
+    public function testProductDeleteEventAction()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
+
+    public function testAddSummary()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
+
+    public function testGetApprovedStatus()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
+
+    public function testGetPendingStatus()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
+
+    public function testGetDisabledStatus()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
+
+    public function testGetEntityCollection()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
+
+    public function testGetCustomerCollection()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
+
+    public function testGetTaggedProductsUrl()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
+
+    public function testGetViewTagUrl()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
+
+    public function testGetEditTagUrl()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
+
+    public function testGetRemoveTagUrl()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
+ 
+    public function testGetPopularCollection()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
+
+    public function testGetRelatedProductIds()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
+
+    public function testIsAvailableInStore()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
+    }
+
+    public function testSaveRelation()
+    {
+        $this->markTestIncomplete('This test has not been implemented yet.');
     }
 }
