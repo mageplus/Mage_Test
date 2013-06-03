@@ -46,8 +46,8 @@ class Mage_Adminhtml_Test_Model_Sales_Order_Create extends Mage_Test_Unit_Case
     }
 
     /**
-     * @magentoDataFixture Mage/Downloadable/_files/product.php
-     * @magentoDataFixture Mage/Downloadable/_files/order_with_downloadable_product.php
+     * @test
+     * @loadFixture
      */
     public function testInitFromOrderShippingAddressSameAsBillingWhenEmpty()
     {
