@@ -23,7 +23,7 @@ class Mage_Sales_Test_Model_Entity_Quote_Address_Attribute_Frontend_Custbalance 
         $this->_model = new Mage_Sales_Model_Entity_Quote_Address_Attribute_Frontend_Custbalance();
     }
 
-    public function testFetchTotals)
+    public function testFetchTotals()
     {
         $this->markTestIncomplete('This test has not been implemented yet.');
     }	

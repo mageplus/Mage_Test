@@ -63,7 +63,7 @@ class Mage_Sales_Test_Model_Order_Creditmemo extends Mage_Test_Unit_Case
         $this->markTestIncomplete('This test has not been implemented yet.');
     }   
 
-    public function testGetItemById)
+    public function testGetItemById()
     {
         $this->markTestIncomplete('This test has not been implemented yet.');
     }   

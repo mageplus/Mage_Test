@@ -424,7 +424,7 @@ class Mage_Sales_Test_Model_Order extends Mage_Test_Unit_Case
         $this->markTestIncomplete('This test has not been implemented yet.');
     }
 
-    public funciton testGetCreditMemosCollection()
+    public function testGetCreditMemosCollection()
     {
         $this->markTestIncomplete('This test has not been implemented yet.');
     }

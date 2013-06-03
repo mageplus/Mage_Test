@@ -20,6 +20,6 @@ class Mage_Sales_Test_Model_Resource_Order_Shipment extends Mage_Test_Unit_Case
 
     protected function setUp()
     {
-        $this->_model = new Mage_Sales_Model_Resource_Order_Shipment);
+        $this->_model = new Mage_Sales_Model_Resource_Order_Shipment();
     }
 }

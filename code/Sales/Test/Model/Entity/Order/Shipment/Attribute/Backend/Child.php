@@ -15,8 +15,8 @@ class Mage_Sales_Test_Model_Entity_Order_Shipment_Attribute_Backend_Child extend
     protected $_model;
 
     // constants required for integration tests
-    const GROUP_TYPE = parent::MODEL;
-    const CLASS_ID = "sales/entity_order_shipment_attribute_backend_child";
+    const CLASS_GROUP_TYPE = parent::CLASS_GROUP_TYPE_MODEL;
+    const CLASS_ID = 'sales/entity_order_shipment_attribute_backend_child';
 
     protected function setUp()
     {

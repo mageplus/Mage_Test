@@ -20,6 +20,6 @@ class Mage_Sales_Test_Model_Mysql4_Order_Tax extends Mage_Test_Unit_Case
 
     protected function setUp()
     {
-        $this->_model = new Mage_Sales_Model_Mysql4_Order_Tax);
+        $this->_model = new Mage_Sales_Model_Mysql4_Order_Tax();
     }
 }
