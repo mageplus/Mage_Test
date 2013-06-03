@@ -105,7 +105,7 @@
                      For adding it to test suite -->
                 <!-- here, we include ALL Magento CORE modules -->
                 <Mage_Admin/>
-                <!-- <Mage_Adminhtml/> -->
+                <Mage_Adminhtml/>
                 <Mage_AdminNotification/>
                 <Mage_Api/>
                 <Mage_Api2/>
@@ -135,8 +135,8 @@
                 <Mage_GoogleAnalytics/>
                 <Mage_GoogleBase/>
                 <Mage_GoogleCheckout/>
-                <!-- <Mage_ImportExport/> -->
-                <!-- <Mage_Index/> -->
+                <Mage_ImportExport/>
+                <Mage_Index/>
                 <Mage_Install/>
                 <Mage_Log/>
                 <Mage_Media/>
@@ -146,7 +146,7 @@
                 <Mage_PageCache/>
                 <Mage_Paygate/>
                 <Mage_Payment/>
-                <!-- <Mage_Paypal/> -->
+                <Mage_Paypal/>
                 <Mage_PayPalUk/>
                 <Mage_Persistent/>
                 <Mage_Poll/>
@@ -154,9 +154,9 @@
                 <Mage_Rating/>
                 <Mage_Reports/>
                 <Mage_Review/>
-                <!-- <Mage_Rss/> -->
+                <Mage_Rss/>
                 <Mage_Rule/>
-                <!-- <Mage_Sales/> -->
+                <Mage_Sales/>
                 <Mage_SalesRule/>
                 <Mage_Sendfriend/>
                 <Mage_Shipping/>
