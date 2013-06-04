@@ -39,7 +39,7 @@
                     <label>Unit Test Cases</label>
                     <description>Unit test case file paths cache.</description>
                     <tags>MAGE_TEST</tags>
-								</mage_test>
+		</mage_test>
             </types>
         </cache>
     </global>
@@ -105,7 +105,7 @@
                      For adding it to test suite -->
                 <!-- here, we include ALL Magento CORE modules -->
                 <Mage_Admin/>
-                <Mage_Adminhtml/>
+                <!-- <Mage_Adminhtml/> -->
                 <Mage_AdminNotification/>
                 <Mage_Api/>
                 <Mage_Api2/>
@@ -135,8 +135,8 @@
                 <Mage_GoogleAnalytics/>
                 <Mage_GoogleBase/>
                 <Mage_GoogleCheckout/>
-                <Mage_ImportExport/>
-                <Mage_Index/>
+                <!-- <Mage_ImportExport/> -->
+                <!-- <Mage_Index/> -->
                 <Mage_Install/>
                 <Mage_Log/>
                 <Mage_Media/>
@@ -146,8 +146,8 @@
                 <Mage_PageCache/>
                 <Mage_Paygate/>
                 <Mage_Payment/>
-                <Mage_Paypal/>
-                <Mage_PayPalUk/>
+                <!-- <Mage_Paypal/> -->
+                <Mage_PaypalUk/>
                 <Mage_Persistent/>
                 <Mage_Poll/>
                 <Mage_ProductAlert/>

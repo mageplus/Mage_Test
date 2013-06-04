@@ -26,9 +26,6 @@
  */
 class Mage_Sales_Test_Model_Abstract extends Mage_Test_Unit_Case
 {
-    /**
-     * @magentoDataFixture Mage/Sales/_files/order.php
-     */
     public function testAfterCommitCallbackOrderGrid()
     {
         $collection = Mage::getResourceModel('sales/order_grid_collection');
@@ -49,7 +46,6 @@ class Mage_Sales_Test_Model_Abstract extends Mage_Test_Unit_Case
         $resource->beginTransaction();
         try {
             /** @var $order Mage_Sales_Model_Order */
-            require __DIR__ . '/../_files/order.php';
             $collection = Mage::getResourceModel('sales/order_grid_collection');
             $this->assertEquals(0, $collection->count());
             $resource->rollBack();

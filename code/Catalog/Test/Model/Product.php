@@ -40,6 +40,10 @@ class Mage_Catalog_Test_Model_Product extends Mage_Test_Unit_Case
      */
     protected $_model;
 
+    // constants required for integration tests
+    const CLASS_GROUP_TYPE = parent::CLASS_GROUP_TYPE_MODEL;
+    const CLASS_ID = 'catalog/product';
+
     protected function setUp()
     {
         $this->_model = new Mage_Catalog_Model_Product;
