@@ -16,7 +16,7 @@ class Mage_Sales_Test_Model_Entity_Order_Attribute_Backend_Child extends Mage_Te
 
     protected function setUp()
     {
-        $this->_model = new Mage_Sales_Entity_Order_Attribute_Backend_Child();
+        $this->_model = new Mage_Sales_Model_Entity_Order_Attribute_Backend_Child();
     }
 
     public function testBeforeSave()
