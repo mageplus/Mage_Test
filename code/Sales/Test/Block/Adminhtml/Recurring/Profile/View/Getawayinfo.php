@@ -10,13 +10,14 @@
 class Mage_Sales_Test_Block_Adminhtml_Recurring_Profile_View_Getawayinfo extends Mage_Test_Unit_Case
 {
     /**
-     * @var Mage_Sales_Block_Adminhtml_Recurring_Profile_View_Getawayinfo
+     * // this is messed up - will fix in Mage+
+     * @var Mage_Adminhtml_Block_Sales_Recurring_Profile_View_Getawayinfo
      */
     protected $_model;
 
     protected function setUp()
     {
-        $this->_model = new Mage_Sales_Block_Adminhtml_Recurring_Profile_View_Getawayinfo();
+        //$this->_model = new Mage_Adminhtml_Block_Sales_Recurring_Profile_View_Getawayinfo();
     }
 
     public function testGetRecurringProfileGetawayInformation()

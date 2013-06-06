@@ -16,7 +16,7 @@ class Mage_Sales_Test_Block_Adminhtml_Recurring_Profile_View_Items extends Mage_
 
     protected function setUp()
     {
-        $this->_model = new Mage_Sales_Block_Adminhtml_Recurring_Profile_View_Items();
+        //$this->_model = new Mage_Sales_Block_Adminhtml_Recurring_Profile_View_Items();
     }
 
     public function testGetItem()

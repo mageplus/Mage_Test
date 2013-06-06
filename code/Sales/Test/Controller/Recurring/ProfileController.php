@@ -10,13 +10,13 @@
 class Mage_Sales_Test_Controller_Recurring_ProfileController extends Mage_Test_Unit_Case
 {
     /**
-     * @var Mage_Sales_Controller_Recurring_ProfileController
+     * @var Mage_Sales_Recurring_ProfileController 
      */
     protected $_model;
 
     protected function setUp()
     {
-        $this->_model = new Mage_Sales_Controller_Recurring_ProfileController();
+        //$this->_model = new Mage_Sales_Recurring_ProfileController();
     }
 
     public function testPreDispatch()

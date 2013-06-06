@@ -7,16 +7,16 @@
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
-class Mage_Sales_Test_Controller_OrderController extends Mage_Test_Unit_Case
+class Mage_Sales_OrderController extends Mage_Test_Unit_Case
 {
     /**
-     * @var Mage_Sales_Controller_OrderController
+     * @var Mage_Sales_OrderController
      */
     protected $_model;
 
     protected function setUp()
     {
-        $this->_model = new Mage_Sales_Controller_OrderController();
+        $this->_model = new Mage_Sales_OrderController();
     }
 
     public function testPreDispatch()

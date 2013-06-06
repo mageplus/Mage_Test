@@ -16,7 +16,7 @@ class Mage_Sales_Test_Block_Adminhtml_Recurring_Profile_View_Info extends Mage_T
 
     protected function setUp()
     {
-        $this->_model = new Mage_Sales_Block_Adminhtml_Recurring_Profile_View_Info();
+        //$this->_model = new Mage_Sales_Block_Adminhtml_Recurring_Profile_View_Info();
     }
 
     public function testGetRecurringProfileInformation()
