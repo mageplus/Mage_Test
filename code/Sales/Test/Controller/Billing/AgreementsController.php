@@ -7,7 +7,7 @@
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
-class Mage_Sales_Test_Controller_AgreementController extends Mage_Test_Unit_Case
+class Mage_Sales_Test_Controller_AgreementController extends Mage_Test_Unit_Case_Controller 
 {
     /**
      * @var Mage_Sales_Controller_AgreementController

@@ -7,7 +7,7 @@
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
-class Mage_Core_Test_Controller_Response_Http extends Mage_Test_Unit_Case
+class Mage_Core_Test_Controller_Response_Http extends Mage_Test_Unit_Case_Controller
 {
     /**
      * @var Mage_Core_Controller_Response_Http
