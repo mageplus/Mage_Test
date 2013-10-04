@@ -22,6 +22,8 @@ Until this gets added to packagist, you'll need to configure the repository as w
 
 Then run `composer update`.
 
+You'll probably want to add all of the new symlink'd files to your `.gitignore` here.
+
 ### 2. Then configure it
 
 You'll need to create a copy of your database for the tests to run against.
@@ -38,6 +40,7 @@ And drop your database credentials and such in.
 
 ### 3. Run it
 
-Then run this from your Magento root.
+Then clear cache and run this from your Magento root.
 
+    rm -rf var/cache/
     vendor/bin/phpunit UnitTests.php
