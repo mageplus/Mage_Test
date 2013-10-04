@@ -24,7 +24,6 @@ code/CatalogSearch/Test     app/code/core/Mage/CatalogSearch/Test
 code/Centinel/Test          app/code/core/Mage/Centinel/Test
 code/Checkout/Test          app/code/core/Mage/Checkout/Test
 code/Cms/Test               app/code/core/Mage/Cms/Test
-code/Connect/Test           app/code/core/Mage/Connect/Test
 code/Contacts/Test          app/code/core/Mage/Contacts/Test
 code/Core/Test              app/code/core/Mage/Core/Test
 code/Cron/Test              app/code/core/Mage/Cron/Test
