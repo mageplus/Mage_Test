@@ -2,7 +2,9 @@ code/Test			app/code/core/Mage/Test
 UnitTests.php			UnitTests.php
 Mage_Test.xml			app/etc/modules/Mage_Test.xml
 local.xml.phpunit.template	app/etc/local.xml.phpunit.template
-lib/*				lib/
+lib/Mage/PHPUnit				lib/Mage/PHPUnit
+lib/Mage/Utils				lib/Mage/Utils
+lib/Spyc				lib/Spyc
 code/Admin/Test			app/code/core/Mage/Admin/Test
 code/AdminNotification/Test	app/code/core/Mage/AdminNotification/Test
 code/Adminhtml/Test		app/code/core/Mage/Adminhtml/Test
