@@ -5,7 +5,7 @@
     "homepage": "http://www.magetest.org/",
     "require": {
         "magento-hackathon/magento-composer-installer": "dev-master",
-        "phpunit/phpunit": "dev-master"
+        "phpunit/phpunit": "3.7.*"
     },
     "authors":[
         {
