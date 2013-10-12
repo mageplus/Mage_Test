@@ -1,0 +1,17 @@
+{
+    "name": "mageplus/magetest",
+    "type": "magento-module",
+    "description": "Test framework and test suite for Magento",
+    "homepage": "http://www.magetest.org/",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "dev-master",
+        "phpunit/phpunit": "3.7.*"
+    },
+    "authors":[
+        {
+            "name":"Lee Bolding",
+            "homepage": "http://leesbian.net"
+        }
+    ]
+}
+
